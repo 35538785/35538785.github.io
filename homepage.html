@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="utf-8"/>
+<title>EECS108060026</title>
+<style type="text/css">
+	.head{background-color:#003344;color:white;font-weight:bold;font-size:30px;text-align:center;padding:10px}
+	.content{width:1000px;margin-left:auto;margin-right:auto}
+	.box{width:280px;padding:10px;margin:10px;background-color:white;display:inline-block;vertical-align:top;text-align:center;line-height:30px;height:150px}
+	
+	.header-inner{background-color:black;position:absolute;left:70px;top:20px;width:200px;height:140px}
+	.titletext{color:#ffffff;font-size:30px;text-align: center;font-family: 標楷體;margin-top:30px}
+	.subtitle{color:#ffffff;font-size:15px;text-align: center;font-family: "Times New Roman"}
+	
+	.headerlist{background-color:#ffffff;position:absolute;left:70px;top:160px;width:200px;height:300px}
+	.hlist{color:#cccccc;font-size:20px;font-family: 標楷體;padding-top:20px;text-align: center;}
+	.hlisttext{width:200px;height:45px;margin-top:20px;}
+	
+	.clockblock{background-color:#ffffff;position:absolute;left:70px;top:500px;width:200px;height:120px;}
+	.clock{color:orange;font-size:15px;text-align: center;font-family: "Times New Roman";margin-top:36px}
+	
+	.mainblock{background-color:#ffffff;position:absolute;left:300px;top:20px;width:750px;height:620px;border-radius: 15px;}
+	.maintitle{color=black;font-size:50px;text-align: center;font-family: "Times New Roman";margin-top:50px}
+	
+	.personblock{background-color:#ffffff;position:absolute;left:1080px;top:20px;width:200px;height:300px;padding:30px}
+	.ppicture{width:140px;height:200px;padding-left:10px}
+	
+	@media screen and (max-width:600px){
+		.content{
+			width:100%; text-align:center
+		}
+	}
+</style>
+<script language="JavaScript">
+function ShowTime(){
+　document.getElementById('showbox').innerHTML = new Date();
+　setTimeout('ShowTime()',1000);
+}
+</script>
+</head>
+<body style="margin:0px;background-color:#eeeeee;" onload="ShowTime()">
+
+	<div class="header-inner">
+		<div class="titleblock">
+			<div class="titletext">
+				<span>歡迎歡迎~</span>	
+			</div>
+			<p class="subtitle">EECS 108060026</p>
+		</div>
+	</div>
+	
+	<div class="headerlist">
+		<div class="hlist">
+			<div class="hlisttext">首頁</div>
+			<div class="hlisttext">關於</div>
+			<div class="hlisttext">經歷</div>
+			<div class="hlisttext">作品</div>
+		</div>
+	</div>
+	
+	<div class="clockblock">
+		<div class="clock">
+			<div id="showbox"></div>
+		</div>
+	</div>
+	
+	<div class="mainblock">
+		<div class="maintitle">
+			Homepage
+		</div>
+		<div>
+			<ol type="1">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			<ol>
+		</div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	
+	<div class="personblock">
+		<div class="perpicture">  
+			<img src="dra2.png" >
+		</div>
+	</div>
+</body>
+
+</html>
