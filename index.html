@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="utf-8"/>
+<title>EECS108060026</title>
+<style type="text/css">
+	.head{background-color:#003344;color:white;font-weight:bold;font-size:30px;text-align:center;padding:10px}
+	.content{width:1000px;margin-left:auto;margin-right:auto}
+	.box{width:280px;padding:10px;margin:10px;background-color:white;display:inline-block;vertical-align:top;text-align:center;line-height:30px;height:150px}
+	
+	.header-inner{background-color:black;position:absolute;left:70px;top:20px;width:200px;height:140px}
+	.titletext{color:#ffffff;font-size:30px;text-align: center;font-family: 標楷體;margin-top:30px}
+	.subtitle{color:#ffffff;font-size:15px;text-align: center;font-family: "Times New Roman"}
+	
+	.headerlist{background-color:#ffffff;position:absolute;left:70px;top:160px;width:200px;height:300px}
+	.hlist{color:#cccccc;font-size:20px;font-family: 標楷體;padding-top:20px;text-align: center;}
+	.hlisttext{width:200px;height:45px;margin-top:20px;}
+	
+	.clockblock{background-color:#ffffff;position:absolute;left:70px;top:500px;width:200px;height:120px;}
+	.clock{color:orange;font-size:15px;text-align: center;font-family: "Times New Roman";margin-top:36px}
+	
+	.mainblock{background-color:#ffffff;position:absolute;left:300px;top:20px;width:750px;height:620px;border-radius: 15px;}
+	.maintitle{color=black;font-size:50px;text-align: center;font-family: "Times New Roman";margin-top:50px}
+	.paragraphs{color=black;font-size:20px;font-family: 標楷體;margin:50px;}
+	.wtodolist{padding-left:180px}
+	.listword{color=black;font-size:18px;text-align: left;font-family: 標楷體;margin:20px;}
+	.listtitle{color=black;font-size:25px;text-align: center;font-family: 標楷體;margin:50px;}
+	
+	.personblock{background-color:#ffffff;position:absolute;left:1080px;top:20px;width:200px;height:300px;padding:30px}
+	.ppicture{width:140px;height:200px;padding-left:10px}
+	.selfintro{color=black;font-size:15px;font-family: 標楷體;margin-top:15px;text-align: left;}
+	.selftitle{color=black;font-size:18px;font-family: 標楷體;margin-bottom:10px;margin-top:10px;text-align: center;}
+	
+	
+	@media screen and (max-width:600px){
+		.content{
+			width:100%; text-align:center
+		}
+	}
+</style>
+<script language="JavaScript">
+function ShowTime(){
+　document.getElementById('showbox').innerHTML = new Date();
+　setTimeout('ShowTime()',1000);
+}
+</script>
+</head>
+<body style="margin:0px;background-color:#eeeeee;" onload="ShowTime()">
+
+	<div class="header-inner">
+		<div class="titleblock">
+			<div class="titletext">
+				<a href="https://35538785.github.io/">
+					<span>歡迎歡迎~</span>	
+				</a>
+			</div>
+			<p class="subtitle">EECS 108060026</p>
+		</div>
+	</div>
+	
+	<div class="headerlist">
+		<div class="hlist">
+			<div class="hlisttext">首頁</div>
+			<div class="hlisttext">關於</div>
+			<div class="hlisttext">經歷</div>
+			<div class="hlisttext">作品</div>
+		</div>
+	</div>
+	
+	<div class="clockblock">
+		<div class="clock">
+			<div id="showbox"></div>
+		</div>
+	</div>
+	
+	<div class="mainblock">
+		<div class="maintitle">
+			Homepage
+		</div>
+		<div class="paragraphs">
+			由於今天才拿到修好的電腦，所以我只有幾小時的製作時間，畫面有點陽春，抱歉啦~ 旁邊的分頁列表是之前做的，現在沒時間研究那個了，可惜，不過評分的項目我都有做，列表只好等有了起始成績再慢慢研究吧。
+		</div>
+		<div class="listtitle">最近想做的事</div>
+		<div>
+			<ol type="1" class="wtodolist">
+				<li class="listword">替自己的宿舍好好的大掃除，最近過敏很嚴重</li>
+				<li class="listword">開始每周買菜練習做飯，新竹東西好貴嗚嗚嗚</li>
+				<li class="listword">把沒看完的會計學看完，再去書局找一本新書</li>
+				<li class="listword">好好規劃去香港的日期，並開始打工存錢</li>
+			<ol>
+		</div>
+		
+		<div class="paragraphs">原本還想放會動的看板娘的，可惡呀(跪</div>
+	</div>
+	
+	<div class="personblock">
+		<div class="perpicture">  
+			<img src="dra2.png" >
+		</div>
+		<div class="selftitle">一些關於作者的小資料</div>
+		<div>
+			<ul style="list-style-type:none;">
+				<li class="selfintro">生日: 2000/11/15</li>
+				<li class="selfintro">星座: 天蠍座</li>
+				<li class="selfintro">興趣: 看書和電影</li>
+				<li class="selfintro">願望: 諸事順利</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+
+</html>
